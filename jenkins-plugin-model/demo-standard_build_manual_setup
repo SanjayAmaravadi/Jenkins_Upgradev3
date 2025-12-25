@@ -2,8 +2,8 @@
 
 ## Open Jenkins
 ## Install Utils on Jenkins Host Machine
-sudo apt-get update
-sudo apt-get install -y dotnet-sdk-7.0
+sudo apt update
+sudo apt install dotnet-sdk-8.0 -y
 dotnet --version
 
 export DOTNET_SYSTEM_GLOBALIZATION_INVARIANT="true" \
@@ -25,7 +25,7 @@ Back to Jenkins - _Manage Jenkins_ ... _Manage Plugins_
 Create new freestyle job `pi`:
 
 - Git SCM
-- repo url `https://github.com/anshulc55/Jenkins_Upgradev3` (no credentials - public)
+- repo url `https://github.com/SanjayAmaravadi/Jenkins_Upgradev3` (no credentials - public)
 - branch spec `\*master`
 - advanced clone - shallow, depth = 1
 - clean before checkout
